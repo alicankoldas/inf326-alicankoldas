@@ -1,0 +1,21 @@
+﻿@model MvcDamacanaStore.Models.Product
+@{
+    ViewBag.Title = "Album - " + Model.Name;
+}
+<h2>@Model.Name</h2>
+<p>
+    <img alt="@Model.Name" />
+</p>
+<div id="album-details">
+    <p>
+        <em>Bayii:</em>
+        @Model.Bayii.Name
+    </p>
+    <p>
+        <em>Price:</em>
+        @String.Format("{0:F}",Model.Price)
+    </p>
+    <p class="button">
+        @Html.ActionLink("Add to Cart", "AddToCart","ShoppingCart", new { id = Model.Id }, null)
+    </p>
+</div>
