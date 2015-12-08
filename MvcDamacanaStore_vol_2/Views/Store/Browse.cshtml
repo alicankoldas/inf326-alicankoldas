@@ -1,0 +1,15 @@
+﻿@model MvcDamacanaStore.Models.Bayii
+
+@{
+    ViewBag.Title = "Browse";
+}
+<h2>Browsing Bayii: @Model.Name</h2>
+<ul>
+    @foreach (var product in Model.Products)
+    {
+        <li>
+            @Html.ActionLink(product.Name,"Details", new { id = product.Id })
+        </li>
+    }
+</ul>
+
