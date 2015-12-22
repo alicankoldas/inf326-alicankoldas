@@ -16,13 +16,13 @@ namespace DamacanaStoreAPI4.Controllers
     {
         private DamacanaStoreAPI4Context db = new DamacanaStoreAPI4Context();
 
-        // GET: api/Carts
+        // GET: api/Carts List
         public IQueryable<Cart> GetCarts()
         {
             return db.Carts;
         }
 
-        // GET: api/Carts/5
+        // GET: api/Carts/5 Retrieve
         [ResponseType(typeof(Cart))]
         public IHttpActionResult GetCart(int id)
         {
@@ -83,22 +83,6 @@ namespace DamacanaStoreAPI4.Controllers
             db.SaveChanges();
 
             return CreatedAtRoute("DefaultApi", new { id = cart.Id }, cart);
-        }
-
-        // DELETE: api/Carts/5
-        [ResponseType(typeof(Cart))]
-        public IHttpActionResult DeleteCart(int id)
-        {
-            Cart cart = db.Carts.Find(id);
-            if (cart == null)
-            {
-                return NotFound();
-            }
-
-            db.Carts.Remove(cart);
-            db.SaveChanges();
-
-            return Ok(cart);
         }
 
         protected override void Dispose(bool disposing)

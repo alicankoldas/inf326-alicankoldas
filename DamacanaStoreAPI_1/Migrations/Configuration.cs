@@ -33,6 +33,30 @@ namespace DamacanaStoreAPI4.Migrations
                 new Product() { Id = 3, name = "Tasdelen", price = 6.99M }
         );
 
+            context.Purchases.AddOrUpdate(x => x.Id,
+               new Purchase()
+               {
+                   Id = 1,
+                   userId = 121,
+                   createdOn = new DateTime(2015, 3, 14),
+                   totalPrice = 5.99M
+               },
+               new Purchase()
+               {
+                   Id = 2,
+                   userId = 131,
+                   createdOn = new DateTime(2015, 3, 17),
+                   totalPrice = 4.99M
+               },
+               new Purchase()
+               {
+                   Id = 3,
+                   userId = 441,
+                   createdOn = new DateTime(2015, 3, 21),
+                   totalPrice = 3.99M
+               }
+               );
+
         }
     }
 }
