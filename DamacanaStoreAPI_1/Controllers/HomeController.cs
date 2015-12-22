@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace DamacanaStoreAPI_1.Controllers
+namespace DamacanaStoreAPI4.Controllers
 {
     public class HomeController : Controller
     {

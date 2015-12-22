@@ -13,7 +13,7 @@ using System.Web.Http.Description;
 using System.Xml.Linq;
 using Newtonsoft.Json;
 
-namespace DamacanaStoreAPI_1.Areas.HelpPage
+namespace DamacanaStoreAPI4.Areas.HelpPage
 {
     /// <summary>
     /// This class will generate the samples for the help page.

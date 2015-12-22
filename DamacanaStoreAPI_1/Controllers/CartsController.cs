@@ -6,16 +6,15 @@ using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
-using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Description;
-using DamacanaStoreAPI_1.Models;
+using DamacanaStoreAPI4.Models;
 
-namespace DamacanaStoreAPI_1.Controllers
+namespace DamacanaStoreAPI4.Controllers
 {
     public class CartsController : ApiController
     {
-        private DamacanaStoreAPI_1Context db = new DamacanaStoreAPI_1Context();
+        private DamacanaStoreAPI4Context db = new DamacanaStoreAPI4Context();
 
         // GET: api/Carts
         public IQueryable<Cart> GetCarts()
@@ -25,9 +24,9 @@ namespace DamacanaStoreAPI_1.Controllers
 
         // GET: api/Carts/5
         [ResponseType(typeof(Cart))]
-        public async Task<IHttpActionResult> GetCart(int id)
+        public IHttpActionResult GetCart(int id)
         {
-            Cart cart = await db.Carts.FindAsync(id);
+            Cart cart = db.Carts.Find(id);
             if (cart == null)
             {
                 return NotFound();
@@ -38,14 +37,14 @@ namespace DamacanaStoreAPI_1.Controllers
 
         // PUT: api/Carts/5
         [ResponseType(typeof(void))]
-        public async Task<IHttpActionResult> PutCart(int id, Cart cart)
+        public IHttpActionResult PutCart(int id, Cart cart)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            if (id != cart.id)
+            if (id != cart.Id)
             {
                 return BadRequest();
             }
@@ -54,7 +53,7 @@ namespace DamacanaStoreAPI_1.Controllers
 
             try
             {
-                await db.SaveChangesAsync();
+                db.SaveChanges();
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -73,7 +72,7 @@ namespace DamacanaStoreAPI_1.Controllers
 
         // POST: api/Carts
         [ResponseType(typeof(Cart))]
-        public async Task<IHttpActionResult> PostCart(Cart cart)
+        public IHttpActionResult PostCart(Cart cart)
         {
             if (!ModelState.IsValid)
             {
@@ -81,23 +80,23 @@ namespace DamacanaStoreAPI_1.Controllers
             }
 
             db.Carts.Add(cart);
-            await db.SaveChangesAsync();
+            db.SaveChanges();
 
-            return CreatedAtRoute("DefaultApi", new { id = cart.id }, cart);
+            return CreatedAtRoute("DefaultApi", new { id = cart.Id }, cart);
         }
 
         // DELETE: api/Carts/5
         [ResponseType(typeof(Cart))]
-        public async Task<IHttpActionResult> DeleteCart(int id)
+        public IHttpActionResult DeleteCart(int id)
         {
-            Cart cart = await db.Carts.FindAsync(id);
+            Cart cart = db.Carts.Find(id);
             if (cart == null)
             {
                 return NotFound();
             }
 
             db.Carts.Remove(cart);
-            await db.SaveChangesAsync();
+            db.SaveChanges();
 
             return Ok(cart);
         }
@@ -113,7 +112,7 @@ namespace DamacanaStoreAPI_1.Controllers
 
         private bool CartExists(int id)
         {
-            return db.Carts.Count(e => e.id == id) > 0;
+            return db.Carts.Count(e => e.Id == id) > 0;
         }
     }
 }

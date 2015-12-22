@@ -7,7 +7,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Web.Http;
 
-namespace DamacanaStoreAPI_1.Results
+namespace DamacanaStoreAPI4.Results
 {
     public class ChallengeResult : IHttpActionResult
     {

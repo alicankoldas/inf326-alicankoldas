@@ -9,9 +9,9 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
-using DamacanaStoreAPI_1.Models;
+using DamacanaStoreAPI4.Models;
 
-namespace DamacanaStoreAPI_1.Providers
+namespace DamacanaStoreAPI4.Providers
 {
     public class ApplicationOAuthProvider : OAuthAuthorizationServerProvider
     {

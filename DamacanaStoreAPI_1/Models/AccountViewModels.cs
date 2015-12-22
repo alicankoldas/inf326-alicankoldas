@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace DamacanaStoreAPI_1.Models
+namespace DamacanaStoreAPI4.Models
 {
     // Models returned by AccountController actions.
 

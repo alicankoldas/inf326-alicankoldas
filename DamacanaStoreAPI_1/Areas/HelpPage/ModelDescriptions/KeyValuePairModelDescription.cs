@@ -1,4 +1,4 @@
-namespace DamacanaStoreAPI_1.Areas.HelpPage.ModelDescriptions
+namespace DamacanaStoreAPI4.Areas.HelpPage.ModelDescriptions
 {
     public class KeyValuePairModelDescription : ModelDescription
     {

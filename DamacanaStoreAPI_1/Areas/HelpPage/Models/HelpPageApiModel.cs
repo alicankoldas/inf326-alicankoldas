@@ -2,9 +2,9 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Net.Http.Headers;
 using System.Web.Http.Description;
-using DamacanaStoreAPI_1.Areas.HelpPage.ModelDescriptions;
+using DamacanaStoreAPI4.Areas.HelpPage.ModelDescriptions;
 
-namespace DamacanaStoreAPI_1.Areas.HelpPage.Models
+namespace DamacanaStoreAPI4.Areas.HelpPage.Models
 {
     /// <summary>
     /// The model that represents an API displayed on the help page.

@@ -1,6 +1,6 @@
 using System;
 
-namespace DamacanaStoreAPI_1.Areas.HelpPage.ModelDescriptions
+namespace DamacanaStoreAPI4.Areas.HelpPage.ModelDescriptions
 {
     /// <summary>
     /// Describes a type model.

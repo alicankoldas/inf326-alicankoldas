@@ -1,4 +1,4 @@
-namespace DamacanaStoreAPI_1.Areas.HelpPage
+namespace DamacanaStoreAPI4.Areas.HelpPage
 {
     /// <summary>
     /// Indicates whether the sample is used for request or response

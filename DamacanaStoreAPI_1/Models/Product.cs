@@ -4,13 +4,16 @@ using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
 
-namespace DamacanaStoreAPI_1.Models
+namespace DamacanaStoreAPI4.Models
 {
     public class Product
     {
-        public int id { get; set; }
+        
+        public int Id { get; set; }
         [Required]
         public string name { get; set; }
         public decimal price { get; set; }
+
+
     }
 }

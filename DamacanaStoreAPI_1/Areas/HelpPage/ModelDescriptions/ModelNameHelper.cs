@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Linq;
 using System.Reflection;
 
-namespace DamacanaStoreAPI_1.Areas.HelpPage.ModelDescriptions
+namespace DamacanaStoreAPI4.Areas.HelpPage.ModelDescriptions
 {
     internal static class ModelNameHelper
     {

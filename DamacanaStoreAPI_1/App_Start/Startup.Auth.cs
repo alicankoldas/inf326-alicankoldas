@@ -8,10 +8,10 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Microsoft.Owin.Security.OAuth;
 using Owin;
-using DamacanaStoreAPI_1.Providers;
-using DamacanaStoreAPI_1.Models;
+using DamacanaStoreAPI4.Providers;
+using DamacanaStoreAPI4.Models;
 
-namespace DamacanaStoreAPI_1
+namespace DamacanaStoreAPI4
 {
     public partial class Startup
     {

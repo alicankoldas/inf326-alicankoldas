@@ -4,15 +4,17 @@ using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
 
-namespace DamacanaStoreAPI_1.Models
+namespace DamacanaStoreAPI4.Models
 {
     public class Cart
     {
-        public int id { get; set; }
-        [Required]
+        public int Id { get; set; }
         public int userId { get; set; }
-        public List<KeyValuePair<Product, int>> items { get; set; }
-        
-        public decimal totalAmount;
+        public decimal totalAmount { get; set; }
+
+        // Foreign Key
+        public int ProductId { get; set; }
+        // Navigation property
+        public virtual Product Product { get; set; }
     }
 }

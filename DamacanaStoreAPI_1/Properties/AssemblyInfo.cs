@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("DamacanaStoreAPI_1")]
+[assembly: AssemblyTitle("DamacanaStoreAPI4")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("DamacanaStoreAPI_1")]
+[assembly: AssemblyProduct("DamacanaStoreAPI4")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("c64e11ef-399f-4337-948f-6314794796dd")]
+[assembly: Guid("b446eab4-42c4-4653-a1c9-fb59976435bf")]
 
 // Version information for an assembly consists of the following four values:
 //

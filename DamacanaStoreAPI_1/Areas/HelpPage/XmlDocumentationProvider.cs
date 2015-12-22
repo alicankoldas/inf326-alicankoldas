@@ -5,9 +5,9 @@ using System.Reflection;
 using System.Web.Http.Controllers;
 using System.Web.Http.Description;
 using System.Xml.XPath;
-using DamacanaStoreAPI_1.Areas.HelpPage.ModelDescriptions;
+using DamacanaStoreAPI4.Areas.HelpPage.ModelDescriptions;
 
-namespace DamacanaStoreAPI_1.Areas.HelpPage
+namespace DamacanaStoreAPI4.Areas.HelpPage
 {
     /// <summary>
     /// A custom <see cref="IDocumentationProvider"/> that reads the API documentation from an XML documentation file.

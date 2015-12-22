@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using Newtonsoft.Json;
 
-namespace DamacanaStoreAPI_1.Models
+namespace DamacanaStoreAPI4.Models
 {
     // Models used as parameters to AccountController actions.
 

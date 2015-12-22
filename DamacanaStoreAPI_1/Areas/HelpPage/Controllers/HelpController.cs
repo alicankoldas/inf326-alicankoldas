@@ -1,10 +1,10 @@
 using System;
 using System.Web.Http;
 using System.Web.Mvc;
-using DamacanaStoreAPI_1.Areas.HelpPage.ModelDescriptions;
-using DamacanaStoreAPI_1.Areas.HelpPage.Models;
+using DamacanaStoreAPI4.Areas.HelpPage.ModelDescriptions;
+using DamacanaStoreAPI4.Areas.HelpPage.Models;
 
-namespace DamacanaStoreAPI_1.Areas.HelpPage.Controllers
+namespace DamacanaStoreAPI4.Areas.HelpPage.Controllers
 {
     /// <summary>
     /// The controller that will handle requests for the help page.

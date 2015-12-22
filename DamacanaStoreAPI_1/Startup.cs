@@ -4,9 +4,9 @@ using System.Linq;
 using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartup(typeof(DamacanaStoreAPI_1.Startup))]
+[assembly: OwinStartup(typeof(DamacanaStoreAPI4.Startup))]
 
-namespace DamacanaStoreAPI_1
+namespace DamacanaStoreAPI4
 {
     public partial class Startup
     {

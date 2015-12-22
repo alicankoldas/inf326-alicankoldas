@@ -4,9 +4,9 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web;
 
-namespace DamacanaStoreAPI_1.Models
+namespace DamacanaStoreAPI4.Models
 {
-    public class DamacanaStoreAPI_1Context : DbContext
+    public class DamacanaStoreAPI4Context : DbContext
     {
         // You can add custom code to this file. Changes will not be overwritten.
         // 
@@ -15,11 +15,13 @@ namespace DamacanaStoreAPI_1.Models
         // For more information refer to the documentation:
         // http://msdn.microsoft.com/en-us/data/jj591621.aspx
     
-        public DamacanaStoreAPI_1Context() : base("name=DamacanaStoreAPI_1Context")
+        public DamacanaStoreAPI4Context() : base("name=DamacanaStoreAPI4Context")
         {
         }
 
-        public System.Data.Entity.DbSet<DamacanaStoreAPI_1.Models.Cart> Carts { get; set; }
+        public System.Data.Entity.DbSet<DamacanaStoreAPI4.Models.Cart> Carts { get; set; }
+
+        public System.Data.Entity.DbSet<DamacanaStoreAPI4.Models.Product> Products { get; set; }
     
     }
 }

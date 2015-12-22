@@ -1,7 +1,7 @@
 using System.Web.Http;
 using System.Web.Mvc;
 
-namespace DamacanaStoreAPI_1.Areas.HelpPage
+namespace DamacanaStoreAPI4.Areas.HelpPage
 {
     public class HelpPageAreaRegistration : AreaRegistration
     {

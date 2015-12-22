@@ -6,7 +6,7 @@ using System.Web.Http;
 using Microsoft.Owin.Security.OAuth;
 using Newtonsoft.Json.Serialization;
 
-namespace DamacanaStoreAPI_1
+namespace DamacanaStoreAPI4
 {
     public static class WebApiConfig
     {

@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace DamacanaStoreAPI_1
+namespace DamacanaStoreAPI4
 {
     public class FilterConfig
     {

@@ -11,10 +11,10 @@ using System.Net.Http.Headers;
 using System.Web.Http;
 using System.Web.Http.Controllers;
 using System.Web.Http.Description;
-using DamacanaStoreAPI_1.Areas.HelpPage.ModelDescriptions;
-using DamacanaStoreAPI_1.Areas.HelpPage.Models;
+using DamacanaStoreAPI4.Areas.HelpPage.ModelDescriptions;
+using DamacanaStoreAPI4.Areas.HelpPage.Models;
 
-namespace DamacanaStoreAPI_1.Areas.HelpPage
+namespace DamacanaStoreAPI4.Areas.HelpPage
 {
     public static class HelpPageConfigurationExtensions
     {
