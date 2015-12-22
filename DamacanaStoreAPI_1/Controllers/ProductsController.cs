@@ -17,16 +17,27 @@ namespace DamacanaStoreAPI4.Controllers
         private DamacanaStoreAPI4Context db = new DamacanaStoreAPI4Context();
 
         // GET: api/Products
-        public IQueryable<Product> GetProducts()
+        public IQueryable<ProductDTO> GetProducts()
         {
-            return db.Products;
+            var products = from b in db.Products
+                           select new ProductDTO()
+                    {
+                        Id = b.Id,
+                        Name = b.name
+                    };
+            return products ;
         }
 
         // GET: api/Products/5
         [ResponseType(typeof(Product))]
         public IHttpActionResult GetProduct(int id)
         {
-            Product product = db.Products.Find(id);
+            var product =  db.Products.Include(b => b.Id).Select(b =>
+                new ProductDetailDTO()
+                {
+                    Id = b.Id,
+                    Name = b.name
+                }).SingleOrDefault(b => b.Id == id);
             if (product == null)
             {
                 return NotFound();
